@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin:0;
+}
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* la caja con los botones */
+
+.main-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.story-button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.story-button{
+    border-radius: 50%;
+}
+
+.story-button img{
+    border-radius: 50%;
+}
+
