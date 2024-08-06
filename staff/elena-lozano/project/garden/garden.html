@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL JARDÍN</title>
+    <link rel="stylesheet" href="./garden.css">
+</head>
+
+<body>
+    <!--una ventana modal para permitir el auto-play-->
+
+    <div id="modalGarden" class="modal-garden">
+        <div class="modal-garden-content">
+            <p>El Jardín</p>
+            <button id="btnOK" class="modal-button">OK</button>
+        </div>
+    </div>
+
+
+    <!--El contenedor con la imagen y los sonidos-->
+    <div class="image-sound-garden">
+        <div class="image-garden">
+            <img src="./garden.jpg" alt="un jardín lleno de plantas aromáticas">
+        </div>
+        <div class="sound">
+            <audio id="audioGarden" loop controls src="./garden.wav" type="audio/wav"></audio>
+        </div>
+    </div>
+    <div class="return-main">
+        <!--TODO: aqui va el contenedor con el botón de atras y el sonido-->
+    </div>
+    <script src="./garden.js"></script>
+
+
+</body>
+
+</html>

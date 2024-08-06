@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+
+/* font:
+    font-family: "Amarante", serif;
+    */
+
+/* Agrega estilos para la ventana modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 200;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    font-family: "Amarante", serif;
+}
+
+/* Estilo opcional para el botón dentro de la modal */
+.modal-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* pone un fondo negro a la imagen*/
+.image {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+/* Ajusta el estilo para la imagen */
+.image img {
+    /* Establece la altura máxima de la imagen al 100% de la altura de la ventana */
+    max-width: 100%;
+    max-height: 100vh;
+    /* Ajusta automáticamente el ancho para mantener la proporción original */
+    width: auto;
+    /* Ajusta automáticamente la altura para mantener la proporción original */
+    height: auto;
+
+    /* redondea los bordes*/
+    border-radius: 30px;
+
+    /* Esto hace que la imagen quede por encima del fondo negro*/
+    z-index: 2;
+}
+
+/* oculta los controles porque quedan más feos que Picio */
+#audioExt {
+    display: none
+}
+
+/* Define la zona de la derecha donde se reproducirá el sonido */
+.right-zone {
+    position: fixed;
+    top: 0;
+    right: 50px;
+    width: 15%;
+    padding-right: 100px;
+    height: 100%;
+    background-color: transparent;
+    border-color: blue;
+    border-style: solid;
+    z-index: 20;
+}
+
+/* Estilos para el enlace a garden*/
+.right-zone a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: transparent;
+    /* Hace el enlace invisible pero clicable */
+}
+
+/* ZONA IZQUIERDA*/
+.left-zone {
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    left: 50px;
+    top: 0;
+    padding-left: 100px;
+    left: 50px;
+    border-color: darkgreen;
+    border-style: double;
+    z-index: 20;
+}
+
+
+/* Media query para pantallas más pequeñas que 1200px (por ejemplo, grandes escritorios) */
+@media (max-width: 1200px) {
+    .right-zone {
+        right: 40px;
+        width: 18%;
+        /* Ajusta el ancho */
+        padding-right: 80px;
+        /* Ajusta el padding */
+    }
+}
+
+/* Media query para pantallas más pequeñas que 992px (por ejemplo, tablets en modo horizontal) */
+@media (max-width: 992px) {
+    .right-zone {
+        right: 30px;
+        width: 20%;
+        padding-right: 60px;
+    }
+}
+
+/* Media query para pantallas más pequeñas que 768px (por ejemplo, tablets en modo vertical) */
+@media (max-width: 768px) {
+    .right-zone {
+        right: 20px;
+        width: 25%;
+        padding-right: 40px;
+    }
+}
+
+/* Media query para pantallas más pequeñas que 576px (por ejemplo, teléfonos móviles) */
+@media (max-width: 576px) {
+    .right-zone {
+        right: 10px;
+        width: 30%;
+        padding-right: 20px;
+    }
+}

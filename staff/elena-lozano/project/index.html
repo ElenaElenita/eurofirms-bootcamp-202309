@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esto es una prueba</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <!-- Ventana modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p>Se recomienda encarecidamente el uso de auriculares para mejorar la inmersión.</p>
+            <button id="btnOK" class="modal-button">OK</button>
+        </div>
+    </div>
+
+    <div class="image-sound">
+        <div class="image">
+            <img src="./main.jpg"
+                alt="una cabaña de troncos de madera enclavada en un bosque, con un jardín a su derecha">
+        </div>
+        <div class="sound">
+            <audio id="audioExt" loop controls src="./main.wav" type="audio/wav"></audio>
+            <audio id="hoverAudio" src="./azada.wav" type="audio/wav"></audio>
+            <audio id="waterAudio" src="./aigua.wav" type="audio/wav"></audio>
+        </div>
+    </div>
+
+    <!-- Mediante tabindex el div se hace enfocable al navegar con tabulador -->
+    <div class="right-zone" tabindex="0">
+        <!--TODO este enlace no redirige al jardín-->
+        <a href="./garden/garden.html"></a>
+    </div>
+    <div class="left-zone" tabindex="0"></div>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
